@@ -22,5 +22,5 @@ ci-tidy:
 
 .PHONY: lint
 lint:
-	docker run -it --rm -v $(CURDIR):/app -w /app golangci/golangci-lint golangci-lint run
+	docker run -t --rm -v $(CURDIR):/app -w /app golangci/golangci-lint golangci-lint run
 
